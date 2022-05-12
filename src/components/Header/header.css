@@ -6,7 +6,6 @@
   background-color: rgba(244, 243, 233, 1);
 }
 .top-header__text {
-  font-family: 'Cormorant';
   font-size: 14px;
   font-weight: 700;
   color: rgba(117, 177, 108, 1);
@@ -48,13 +47,12 @@
   grid-auto-flow: column;
   column-gap: 10px;
   align-items: center;
-  font-family: 'Cormorant';
-  font-family: Cormorant;
   font-size: 18px;
   font-weight: 700;
 }
 .header_actions{
   display: grid;
+  gap: 15px;
   grid-template-columns: repeat(2,auto);
   justify-content: center;
   align-items: center;
