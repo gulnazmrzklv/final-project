@@ -1,7 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 import  Header from './components/Header/Header'
 import Banner from './components/Banner/Banner';
-import Product from './components/Product/Product'
+import HomePage from './pages/HomePage';
+import AboutUsPage from './pages/AboutUsPage';
+import OurServicesPage from './pages/OurServicesPage';
+import ProductPage from './pages/ProductPage/ProductPage';
+import ContactsPage from './pages/ContactsPage';
+import FaqPage from './pages/FaqPage';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+
 
 function App() {
   return (
@@ -9,22 +16,14 @@ function App() {
       <Header />
       <Banner />
       <Routes>
-        <Route path='/' element={<div>Home</div>} />
-        <Route path='/aboutus' element={<div>About us</div>} />
-
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/aboutus' element={<AboutUsPage />} />
+        <Route path='/services' element={<OurServicesPage/>} />
+        <Route path='/products/:name' element={<ProductPage/>} />
+        <Route path='/checkout' element={<CheckoutPage/>} />
+        <Route path='/contacts' element={<ContactsPage/>} />
+        <Route path='/faq' element={<FaqPage/>} />
       </Routes>
-      <section>
-        <h2>Our Product</h2>
-        <div className='product__list'>
-          <Product
-              image ="https://www.dairyfarmers.com.au/wp-content/uploads/2021/07/DF_ActivePackshot-1.png"
-              title ="Pure milk"
-              text ="There are many variations of passages Lorem."
-              price ={36.00}
-              IsLiked ={false}
-          />
-        </div>
-      </section>
     </div>
   );
 }

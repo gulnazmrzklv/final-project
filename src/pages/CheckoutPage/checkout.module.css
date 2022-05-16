@@ -1,0 +1,37 @@
+
+.form{
+  display: grid;
+  row-gap: 12px;
+  width: 30%;
+  margin: 20px;
+}
+.field {
+  display: grid;
+  
+}
+.text {
+  font-family: 'Open Sans';
+  height: 38px;
+  display: inline-flex;
+  font-size: 13px;
+  align-items: center;
+  font-weight: 700;
+}
+.field input {
+  height: 40px;
+  padding-left: 15px;
+  font-size: 14px;
+  background-color:#E5E5E5;
+  border: none;
+  border-radius: 15px;
+}
+.submitBtn {
+  height: 50px;
+  width: 205px;
+  border-radius: 10px;
+  background: rgba(117, 177, 108, 1);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+}
