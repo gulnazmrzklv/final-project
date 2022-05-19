@@ -1,9 +1,6 @@
 .category{
-
-}
-.products{
-
+  display: grid;
 }
 .search {
-  
+  background-color: gray;
 }

@@ -40,7 +40,7 @@ function Header() {
         </nav>
         <div className={css.actions}>
           <button className={css.btn}><SearchIcon /></button>
-          <Link to="/checkout">
+          <Link to="/cart">
             <button className={css.btn}><CartIcon /></button>
           </Link>
           

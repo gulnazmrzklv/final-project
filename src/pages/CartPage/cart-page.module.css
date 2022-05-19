@@ -1,0 +1,15 @@
+.content {
+  display: grid;
+  grid-template-columns: 2.1fr 1fr;
+  column-gap: 35px;
+}
+.cart {
+  display: grid;
+}
+.cartRow{
+  display: grid;
+  padding-bottom: ;
+}
+.head{
+
+}

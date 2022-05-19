@@ -3,7 +3,7 @@ import { ReactComponent as ToCartIcon } from '../../assets/tocart.svg';
 import css from './product.module.css';
 
 
-function Product({IsLiked, title, price, text, image}) {
+function Product({title, price, text, image}) {
   return(
     <article className={css.card}>
       <img src={image} alt="" className={css.image}/>

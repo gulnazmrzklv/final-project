@@ -1,19 +1,60 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id":1,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2021/07/DF_ActivePackshot-1.png",
+      "title": "Pure Milk",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text .",
+      "price": 6.00
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id":2,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2019/08/classic.png",
+      "title": "Flavoured Milk",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 22.00
+    },
+    {
+      "id":3,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2021/07/a2-milk-2r3.png",
+      "title": "A2 Protein Milk",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": "19.00"
+    },
+    {
+      "id":4,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2019/08/buttermilk.png",
+      "title": "Buttermilk",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 16.00
+    },
+    {
+      "id":5,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2016/04/cream.png",
+      "title": "Cream",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 9.00
+    },
+    {
+      "id":6,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2021/11/Butters_family.png",
+      "title": "Butter",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 36.00
+    },
+    {
+      "id":7,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2019/09/custard.png",
+      "title": "Custard",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 15.00
+    },
+    {
+      "id":8,
+      "image": "https://www.dairyfarmers.com.au/wp-content/uploads/2020/05/thick-creamy_small-1.png",
+      "title": "Thick & Creamy Yoghurt",
+      "description":"There are many variations of passages Lorem Ipsum is simply dummy text.",
+      "price": 17.00
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
