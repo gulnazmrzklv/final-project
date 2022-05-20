@@ -11,7 +11,7 @@ import css from './header.module.css';
 function Header() {
   return (
     <header className={css.header}>
-      <div className={clsx(css.container, css.topheader)}>
+      <div className={clsx('container', css.topheader)}>
         <div className={css.text}>We provide 100% fresh service to our customers.</div>
         <div className={css.contacts}>
           <div className={css.email}>Email: info.dairy@gmail.com </div>

@@ -2,17 +2,17 @@ import { Routes, Route, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { StoreContext } from './store/context';
-import  Header from './components/Header/Header'
-import Banner from './components/Banner/Banner';
+import  Header from './components/Header'
+import Banner from './components/Banner';
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
 import OurServicesPage from './pages/OurServicesPage';
-import ProductPage from './pages/ProductPage/ProductPage';
-import ItemPage from './pages/ItemPage/ItemPage';
+import ProductPage from './pages/ProductPage';
+import ItemPage from './pages/ItemPage';
 import ContactsPage from './pages/ContactsPage';
 import FaqPage from './pages/FaqPage';
-import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
-import CartPage from './pages/CartPage/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
+import CartPage from './pages/CartPage';
 
 
 function App() {

@@ -1,15 +1,64 @@
+.page {
+  padding-top: 20px;
+}
 .content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
   display: grid;
-  grid-template-columns: 2.1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   column-gap: 35px;
 }
 .cart {
   display: grid;
+  row-gap: 25px;
 }
 .cartRow{
   display: grid;
-  padding-bottom: ;
+  border-bottom: 1px solid rgb(188, 185, 185);
+  padding-bottom: 13px;
+  grid-template-columns: 1fr 89px 79px 89px auto;
+  column-gap: 20px;
 }
-.head{
-
+.cartHead{
+  font-weight: 700;
+}
+.cartActions {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 7px;
+}
+.cartActions button:last-of-type {
+  justify-self: end;
+  margin-right: 200px;
+}
+.summary {
+  height: 420px;
+  background-color: var(--color1);
+  color: white;
+  width: 300px;
+  align-self: center;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+.summaryItem {
+  margin: 25px 10px;
+  display: grid;
+  grid-template-columns: 1fr 55px;
+  justify-content: space-between;
+}
+.image {
+  width: 120px;
+  height: 100px;
+}
+.itemImage{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: space-between;
+}
+input {
+  background-color: var(--color3);
+  font-size: 15px;
+  width: 20px;
+  height: 25px;
 }

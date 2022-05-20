@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import Product from '../../components/Product/Product';
+import Product from '../../components/Product';
 import { useStore } from '../../store/context';
 
 function ItemPage() {

@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { useStore } from '../../store/context';
 import axios from 'axios';
-import Product from '../../components/Product/Product';
+import Product from '../../components/Product';
 import { Link } from 'react-router-dom';
 
 function ProductPage(){
@@ -20,17 +20,20 @@ function ProductPage(){
 
   return(
     <div className={clsx(css.category, 'container')}>
-      <div className={css.items}>{products.map((product)=>(
-        <Link to={`/item/${product.id}`} key={product.id}>
-          <Product 
-            image={product.image}
-            title={product.title}
-            text={product.description}
-            price={product.price}
-        />
-        </Link>
-      ))}
+      <div className={css.productList}>
+        <div className={css.items}>{products.map((product)=>(
+          <Link to={`/item/${product.id}`} key={product.id}>
+            <Product 
+              image={product.image}
+              title={product.title}
+              text={product.description}
+              price={product.price}
+            />
+          </Link>
+        ))}
+        </div>
       </div>
+
       <div className={css.search}></div>
     </div>
   )

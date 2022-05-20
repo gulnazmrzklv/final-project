@@ -1,6 +1,13 @@
 .category{
   display: grid;
+  grid-template-columns: 1fr 250px;
+  column-gap: 10px;
 }
 .search {
-  background-color: gray;
+  background-color: rgb(214, 213, 213);
+}
+.productList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
 }
