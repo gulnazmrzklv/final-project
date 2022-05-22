@@ -19,7 +19,7 @@ function ProductPage(){
   }, [])
 
   return(
-    <div className={clsx(css.category, 'container')}>
+    <div className={clsx("container", css.category)}>
       <div className={css.productList}>
         <div className={css.items}>{products.map((product)=>(
           <Link to={`/item/${product.id}`} key={product.id}>

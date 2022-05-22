@@ -6,9 +6,11 @@ import { ReactComponent as CartIcon } from '../../assets/cart.svg';
 import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
 import css from './header.module.css';
+import { useStore } from '../../store/context';
 
 
 function Header() {
+  const {cart} = useStore();
   return (
     <header className={css.header}>
       <div className={clsx('container', css.topheader)}>
@@ -39,13 +41,12 @@ function Header() {
           <Link to="/faq">Faq</Link>
         </nav>
         <div className={css.actions}>
-          <button className={css.btn}><SearchIcon /></button>
-          <Link to="/cart">
-            <button className={css.btn}><CartIcon /></button>
+          <button className={css.searchBtn}>
+            <SearchIcon />
+          </button>
+          <Link to="/cart" data-count={cart.length} className={css.btn}>
+            <CartIcon />
           </Link>
-          
-
-
         </div>
       </div>
     </header>
