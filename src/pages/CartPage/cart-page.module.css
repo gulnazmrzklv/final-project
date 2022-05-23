@@ -1,6 +1,9 @@
 .page {
   padding-top: 20px;
 }
+.title {
+  color: var(--color1);
+}
 .content {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -22,7 +25,9 @@
   column-gap: 20px;
 }
 .cartHead{
-  font-weight: 700;
+  font-weight: 900;
+  color: var(--color2);
+  font-size: 20px;
 }
 .cartActions {
   display: grid;

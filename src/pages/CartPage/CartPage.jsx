@@ -4,7 +4,7 @@ import { useStore } from '../../store/context';
 
 
 const CartPage = () => {
-  const {cart, changeProductQty} = useStore();
+  const {cart, changeProductQty, deleteFromCart } = useStore();
   return (
     <div className={clsx("container",css.page)}>
       <h1 className={clsx("page-title",css.title)}>Shopping Cart</h1>
@@ -29,7 +29,7 @@ const CartPage = () => {
                 onChange={(e)=> changeProductQty(products.id, e.target.value)}
               />
               <p>{(products.price * products.qty).toFixed(2)}</p>
-              <div>x</div>
+              <button onClick={deleteFromCart}>x</button>
             </div>
             ))}
         </div>

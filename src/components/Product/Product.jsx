@@ -7,7 +7,7 @@ function Product({title, price, text, image}) {
   return(
     <article className={clsx("container",css.card)}>
       <img src={image} alt="" className={css.image}/>
-      <div className={css.discription}>
+      <div className={css.description}>
         <h2 className={css.title}>{title}</h2>
         <p className={css.text}>{text}</p>
         <div className={css.action}>

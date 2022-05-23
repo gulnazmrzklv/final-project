@@ -66,6 +66,7 @@ function App() {
     addToCart,
     cart,
     changeProductQty,
+    deleteFromCart,
   };
   return (
     <div className="App">

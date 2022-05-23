@@ -10,8 +10,8 @@
   object-fit: contain;
   object-position: center;
 }
-.discription {
-  padding: 15px;
+.description {
+  padding: 13px;
   width: 200px;
   background-color: rgba(117, 177, 108, 1);
   font-family: Cormorant;
@@ -29,11 +29,12 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  padding-top: 12px;
 }
 .action {
   display: grid;
   grid-auto-flow: column;
-  padding-top: 35px;
+  padding-top: 23px;
   font-size: 24px;
   font-weight: 600;
 }
