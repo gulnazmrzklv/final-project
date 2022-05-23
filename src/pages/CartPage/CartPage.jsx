@@ -8,7 +8,7 @@ const CartPage = () => {
   return (
     <div className={clsx("container",css.page)}>
       <h1 className={clsx("page-title",css.title)}>Shopping Cart</h1>
-      <div className= {css.content}>
+      <div className={css.content}>
         <div className={css.carts}>
           <div className={clsx(css.cartHead, css.cartRow)}>
             <p>Item</p>
@@ -16,22 +16,22 @@ const CartPage = () => {
             <p>Qty</p>
             <p>Subtotal</p>
           </div>
-          {cart.map((product) => (
-            <div key={product.id} className={clsx(css.cartItem, css.cartRow)}>
+          {cart.map((products) => (
+            <div key={products.id} className={clsx(css.cartItem, css.cartRow)}>
               <div className={css.itemImage}>
-                <img src={product.image} className={css.producImage} alt="" />
-                <p>{product.title}</p>
+                <img src={products.image} className={css.productImage} alt=""/>
+                <p>{products.title}</p>
               </div>
-              <p>{product.price}</p>
+              <p>{products.price.toFixed(2)}</p>
               <input
                 type="number"
-                defaultValue={product.qty}
-                onChange={(e)=> changeProductQty(product.id, e.target.value)}
+                defaultValue={products.qty}
+                onChange={(e)=> changeProductQty(products.id, e.target.value)}
               />
-              <p>{product.price*product.qty}</p>
+              <p>{(products.price * products.qty).toFixed(2)}</p>
               <div>x</div>
             </div>
-          ))}
+            ))}
         </div>
       </div>
       <div className={css.cartActions}>

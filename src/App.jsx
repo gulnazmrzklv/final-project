@@ -22,13 +22,14 @@ function App() {
     );
 
 
-  const fetchProduct = async () => {
-    const { data } = await axios.get('http://localhost:3001/products');
-    setProducts(data)
+  const fetchAllData = async () => {
+    const [ resProducts ] = await Promise.all([
+      axios.get('http://localhost:3001/products')])
+    setProducts(resProducts.data)
   };
 
   useEffect(() =>{
-    fetchProduct();
+    fetchAllData();
   }, []);
 
   const addToCart = (newProduct) => {
