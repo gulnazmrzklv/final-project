@@ -9,7 +9,7 @@ function ItemPage() {
   const currentItem = products.find((item) => item.id === +id)
   
   return (
-    <div>
+    <div className='box'>
       {currentItem &&(
         <button onClick={() =>addToCart(currentItem)}>
           <Product

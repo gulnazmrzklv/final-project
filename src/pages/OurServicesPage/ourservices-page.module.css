@@ -1,0 +1,24 @@
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 20px;
+}
+.title{
+  color: var(--color1);
+  margin-left: 20px;
+}
+.boxItem {
+  height: 300px;
+  width: 250px;
+  padding: 50px;
+  background-color: rgb(249, 247, 247);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.boxtitle {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.boxItem:hover {
+  background-color: var(--color2);
+}
