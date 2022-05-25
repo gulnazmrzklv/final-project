@@ -5,7 +5,7 @@ import css from './product.module.css';
 
 function Product({title, price, text, image}) {
   return(
-    <article className={clsx("container",css.card)}>
+    <div className={css.card}>
       <img src={image} alt="" className={css.image}/>
       <div className={css.description}>
         <h2 className={css.title}>{title}</h2>
@@ -15,7 +15,7 @@ function Product({title, price, text, image}) {
           <button className={css.incartbtn}><ToCartIcon /></button>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
 

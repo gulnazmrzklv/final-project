@@ -1,0 +1,21 @@
+.input {
+  height: 40px;
+  width: 500px;
+  padding: 0 30px;
+  margin-top: 20px;
+  margin-left: 70px;
+  border-radius: 20px;
+  background-color:rgba(244, 243, 233, 1);
+  margin-bottom: 20px;
+}
+.list {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 1px 4px 10px rgba(0,0,0, .2);
+}
+.search {
+  position: relative;
+}

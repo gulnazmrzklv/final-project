@@ -6,6 +6,8 @@ import { useStore } from '../../store/context';
 import axios from 'axios';
 import Product from '../../components/Product';
 import { Link } from 'react-router-dom';
+import SidebarImgUrl from '../../assets/right-sidebar.png';
+
 
 function ProductPage(){
   const {products, setProducts} = useStore();
@@ -20,21 +22,21 @@ function ProductPage(){
 
   return(
     <div className={clsx("container", css.category)}>
-      <div className={css.productList}>
-        <div className={css.items}>{products.map((product)=>(
-          <Link to={`/item/${product.id}`} key={product.id}>
-            <Product 
-              image={product.image}
-              title={product.title}
-              text={product.description}
-              price={product.price}
-            />
-          </Link>
-        ))}
-        </div>
-      </div>
-
-      <div className={css.search}></div>
+          <div className={css.productList}>
+            {products.map((product)=>(
+              <Link to={`/item/${product.id}`} key={product.id}>
+                <Product 
+                  image={product.image}
+                  title={product.title}
+                  text={product.description}
+                  price={product.price}
+                />
+              </Link>
+            ))}
+          </div>
+          <div className={css.sidebar}>
+            <img  src={SidebarImgUrl} alt="" />
+          </div>
     </div>
   )
 }

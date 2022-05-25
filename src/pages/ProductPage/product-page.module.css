@@ -1,13 +1,14 @@
 .category{
   display: grid;
   grid-template-columns: 1fr 250px;
-  column-gap: 10px;
+  column-gap: 15px;
+  margin-top: 100px;
 }
-.search {
-  background-color: rgb(214, 213, 213);
+.title {
+  color: var(--color1);
 }
+
 .productList{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
 }
