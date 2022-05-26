@@ -1,0 +1,12 @@
+.brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 15px;
+  padding-top: 50px;
+}
+.imgfooter {
+  position: relative;
+  padding-left: 100px;
+}

@@ -44,7 +44,7 @@ function Header() {
             <Link to="/">Home</Link>
             <Link to="/aboutus">About us</Link>
             <Link to="/services">Our services</Link>
-            <Link to="/products/:name">Products</Link>
+            <Link to="/products">Products</Link>
             <Link to="/contacts">Contacts</Link>
             <Link to="/faq">Faq</Link>
           </nav>

@@ -1,0 +1,51 @@
+.background {
+  width: 1440px;
+  height: 400px;
+  object-fit:contain;
+  background: linear-gradient(10.06deg, #F5E589 16.6%, #75B16C 61.96%);
+  position: relative;
+}
+.cowimg{
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.splashimg{
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+.milkimg {
+  position: absolute;
+  top: -15px;
+  right: 180px;
+}
+.passage{
+  width: 400px;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 300px;
+}
+.passage h1{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 42px;
+  padding-bottom: 15px;
+}
+.passage p{
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.passage button {
+  height: 50px;
+  width: 172px;
+  border-radius: 5px;
+  background-color: var(--color1);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 25px;
+}

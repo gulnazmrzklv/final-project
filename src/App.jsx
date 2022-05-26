@@ -13,6 +13,7 @@ import ContactsPage from './pages/ContactsPage';
 import FaqPage from './pages/FaqPage';
 import CheckoutPage from './pages/CheckoutPage';
 import CartPage from './pages/CartPage';
+import Sponsors from './components/Sponsors';
 
 
 function App() {
@@ -76,13 +77,14 @@ function App() {
           <Route path='/' element={<HomePage/>} />
           <Route path='/aboutus' element={<AboutUsPage />} />
           <Route path='/services' element={<OurServicesPage/>} />
-          <Route path="/products/:name" element={<ProductPage />} />
+          <Route path="/products" element={<ProductPage />} />
           <Route path="/item/:id" element={<ItemPage />} />
           <Route path='/checkout' element={<CheckoutPage/>} />
           <Route path='/cart' element={<CartPage/>}/>
           <Route path='/contacts' element={<ContactsPage/>} />
           <Route path='/faq' element={<FaqPage/>} />
         </Routes>
+        <Sponsors />
       </StoreContext.Provider>
     </div>
   );

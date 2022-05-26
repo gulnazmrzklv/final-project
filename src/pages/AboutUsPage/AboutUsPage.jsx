@@ -7,6 +7,10 @@ import FarmImgUrl from '../../assets/farm.png';
 import { ReactComponent as Phone } from '../../assets/phone.svg';
 import MilkImgUrl from '../../assets/milk.svg';
 import FruitImgUrl from '../../assets/fruit.svg';
+import BgImgUrl from '../../assets/bg.png';
+import Farmer1ImgUrl from '../../assets/farmer1.png';
+import Farmer2ImgUrl from '../../assets/farmer2.png';
+import Farmer3ImgUrl from '../../assets/farmer3.png';
 
 
 function AboutUsPage(){
@@ -50,6 +54,20 @@ function AboutUsPage(){
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className={css.bg} >
+          <img className={css.bg} src={BgImgUrl} alt="" />
+        </div>
+        <div className={css.farmers}>
+          <h4>Meet Our Farmers</h4>
+          <div className={css.farmerImg}>
+            <img className={css.farmer} src={Farmer1ImgUrl} alt="" />
+            <img className={css.farmer} src={Farmer2ImgUrl} alt="" />
+            <img className={css.farmer} src={Farmer3ImgUrl} alt="" />
+          </div>
+        </div>
+
       </div>
     </div>
   )

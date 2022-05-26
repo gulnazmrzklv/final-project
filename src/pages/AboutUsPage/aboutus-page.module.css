@@ -5,12 +5,12 @@
   justify-items: center;
 }
 .img {
-  padding-top: 25px;
+  padding-top: 35px;
   padding-right: 500px;
 }
 .signature{
   padding-left: 500px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .farm {
@@ -92,4 +92,26 @@ h4{
   font-weight: 400;
   line-height: 30px;
   color: rgba(119, 119, 119, 1);
+}
+.bg {
+  padding-top: 30px;
+  width: 1440px;
+  height: 500px;
+  position: relative;
+  border: none;
+}
+.farmers{
+  position: absolute;
+  top:1160px;
+  left: 300px;
+  text-align: center;
+}
+.farmerImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 70px;
+}
+.farmer {
+  width: 250px;
+  height: 250px;
 }

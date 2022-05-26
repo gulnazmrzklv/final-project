@@ -22,13 +22,13 @@ const CartPage = () => {
                 <img src={products.image} className={css.productImage} alt=""/>
                 <p>{products.title}</p>
               </div>
-              <p>{products.price.toFixed(2)}</p>
+              <p>{+products.price.toFixed(2)}</p>
               <input
                 type="number"
-                defaultValue={products.qty}
+                defaultValue={+products.qty}
                 onChange={(e)=> changeProductQty(products.id, e.target.value)}
               />
-              <p>{(products.price * products.qty).toFixed(2)}</p>
+              <p>{+(products.price *  products.qty)}</p>
               <button>x</button>
             </div>
             ))}

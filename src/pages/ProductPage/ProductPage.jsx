@@ -22,7 +22,9 @@ function ProductPage(){
 
   return(
     <div className={clsx("container", css.category)}>
-          <div className={css.productList}>
+      <div>
+        <h1 className={clsx("page-title",css.title)}>Our products</h1>
+        <div className={css.productList}>
             {products.map((product)=>(
               <Link to={`/item/${product.id}`} key={product.id}>
                 <Product 
@@ -35,8 +37,9 @@ function ProductPage(){
             ))}
           </div>
           <div className={css.sidebar}>
-            <img  src={SidebarImgUrl} alt="" />
           </div>
+      </div>
+
     </div>
   )
 }
