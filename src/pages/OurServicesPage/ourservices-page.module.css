@@ -1,12 +1,21 @@
+.background {
+  width: 1440px;
+  height: 180px;
+  object-fit:contain;
+  background: linear-gradient(25.06deg, #75B16C 26.96%,  #F5E589 61.6%);
+  position: relative;
+}
+.title{
+  color: whitesmoke;
+  font-size: 85px;
+  padding-left: 100px;
+}
 .box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: 20px;
 }
-.title{
-  color: var(--color1);
-  margin-left: 20px;
-}
+
 .boxItem {
   height: 350px;
   width: 250px;

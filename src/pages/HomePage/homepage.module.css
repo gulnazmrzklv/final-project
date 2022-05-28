@@ -1,0 +1,88 @@
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 20px;
+}
+.img {
+  padding-top: 35px;
+  padding-right: 500px;
+}
+.signature{
+  padding-left: 500px;
+  padding-bottom: 40px;
+}
+.logo {
+  height: 262px;
+  width: 570px;
+  align-items: center;
+  text-align: center;
+}
+.box{
+  height: 334px;
+  width: 170px;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 35px;
+  width: 850px;
+  justify-items: center;
+  margin-left: 300px;
+  padding-top: 30px;
+}
+.titleitem {
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+}
+.box h5 {
+  font-size: 17px;
+  margin-top: 15px;
+}
+.boxtext {
+  color: var(--color1);
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.price {
+  font-size: 25px;
+
+}
+.item {
+  height: 180px;
+}
+.boxbtn {
+  height: 50px;
+  width: 170px;
+  border-radius: 5px;
+  background-color: var(--color2);
+  color: white;
+  margin-left: 600px;
+  margin-top: 15px;
+}
+.gallerybox {
+  width: 1200px;
+  height: 560px;
+  justify-items: center;
+  justify-content: center;
+  border: 3px  solid var(--color1); 
+  margin-left: 120px;
+}
+.gallerytitle {
+  text-align: center;
+  color: var(--color1);
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 35px;
+  justify-items: center;
+  
+}

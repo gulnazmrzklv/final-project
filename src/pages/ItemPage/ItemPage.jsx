@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { useParams } from 'react-router-dom'
-import Product from '../../components/Product';
 import { useStore } from '../../store/context';
 import css from './item-page.module.css'
 
@@ -11,17 +10,20 @@ function ItemPage() {
   const currentItem = products.find((item) => item.id === +id)
   
   return (
-    <div className={clsx('container', css.box)}>
+    <div className='container'>
       <div>
-        <h1 className={clsx("page-title",css.title)}>Our products</h1>
+        <h1 className={clsx("page-title",css.title)}>Product</h1>
         {currentItem &&(
           <div onClick={() =>addToCart(currentItem)}>
-            <Product
-              title ={currentItem?.title}
-              image={currentItem?.image}
-              text={currentItem?.description}
-              price={currentItem?.price}
-            />
+            <div className={css.box} key={currentItem?.id}>
+              <img className={css.image} src={currentItem?.image} alt="" />
+              <div>
+                <h5 className={css.texttitle}>{currentItem?.title}</h5>
+                <p className={css.text}>{currentItem?.description}</p>
+                <p className={css.price}>{currentItem?.price.toFixed(2)}$</p>
+                <button></button>
+              </div>
+            </div>
           </div>
         )}
       </div>

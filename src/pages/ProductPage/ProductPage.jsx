@@ -1,12 +1,12 @@
 //import Product from '../../components/Product/Product.jsx';
 import css from './product-page.module.css';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useStore } from '../../store/context';
 import axios from 'axios';
 import Product from '../../components/Product';
 import { Link } from 'react-router-dom';
-import SidebarImgUrl from '../../assets/right-sidebar.png';
+//import SidebarImgUrl from '../../assets/right-sidebar.png';
 
 
 function ProductPage(){
@@ -23,7 +23,9 @@ function ProductPage(){
   return(
     <div className={clsx("container", css.category)}>
       <div>
-        <h1 className={clsx("page-title",css.title)}>Our products</h1>
+        <div className={css.background}>
+          <h1 className={clsx("page-title",css.title)}>Our Products</h1>
+        </div>
         <div className={css.productList}>
             {products.map((product)=>(
               <Link to={`/item/${product.id}`} key={product.id}>

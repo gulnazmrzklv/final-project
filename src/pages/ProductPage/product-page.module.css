@@ -1,13 +1,22 @@
+.background {
+  width: 1440px;
+  height: 180px;
+  object-fit:contain;
+  background: linear-gradient(25.06deg, #75B16C 26.96%,  #F5E589 61.6%);
+  position: relative;
+  margin-bottom: 35px;
+}
+.title{
+  color: whitesmoke;
+  font-size: 85px;
+  padding-left: 100px;
+}
 .category{
   display: grid;
   grid-template-columns: 1fr 250px;
   column-gap: 15px;
   margin-top: 30px;
 }
-.title {
-  color: var(--color1);
-}
-
 .productList{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

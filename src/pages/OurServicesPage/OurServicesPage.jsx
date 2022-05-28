@@ -10,7 +10,9 @@ import PureImgUrl from '../../assets/pure.svg';
 function OurServicesPage(){
   return(
     <div className={clsx("container",css.sevice)}>
-      <h1 className={clsx("page-title",css.title)}>Our services</h1>
+      <div className={css.background}>
+        <h1 className={clsx("page-title",css.title)}>Our Services</h1>
+      </div>
       <div className={css.box}>
         <div className={css.boxItem}>
           <img className={css.img} src={MilkImgUrl} alt="" />

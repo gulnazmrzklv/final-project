@@ -1,3 +1,15 @@
+.background {
+  width: 1440px;
+  height: 180px;
+  object-fit:contain;
+  background: linear-gradient(25.06deg,  #75B16C 26.96%,  #F5E589 61.6%);
+  position: relative;
+}
+.title{
+  color: white;
+  font-size: 85px;
+  padding-left: 100px;
+}
 .welcome {
   display: grid;
   grid-template-columns: 1fr 350px;
@@ -23,7 +35,7 @@
 }
 .contactbox {
   position: absolute;
-  top: 920px;
+  top: 1020px;
   left: 80px;
   height: 120px;
   width: 300px;
@@ -102,7 +114,7 @@ h4{
 }
 .farmers{
   position: absolute;
-  top:1160px;
+  bottom:-850px;
   left: 300px;
   text-align: center;
 }

@@ -8,27 +8,26 @@ import clsx from 'clsx'
 function ContactsPage(){
   return(
     <div>
-      <h1 className={clsx("page-title",css.title)}>Contacts</h1>
       <div className={clsx('container',css.map)}>
-      <img className={css.map} src={MapImgUrl} alt="" />
+        <div className={css.background}>
+          <h1 className={clsx("page-title",css.title)}>Contacts</h1>
+        </div>
+        <img className={css.map} src={MapImgUrl} alt="" />
       </div>
       <div className={css.contacts}>
         <h4 className={css.theme}>Contact 24/7</h4>
-        <p>Lorem ipsum dolor sit amet, adipiscing elit. Ut  sagittis tortor.</p>
+        <p className={css.text}>Lorem ipsum dolor sit amet, adipiscing elit. Ut  sagittis tortor.</p>
         <div className={css.icon}>
           <PhoneIcon/>
-          <p>CONTACT PHONE </p>
-          <p>+55 (9900) 666 22</p>
+          <p>CONTACT PHONE: Cell:+1(550)260-667-22</p>
         </div>
         <div className={css.icon}>
           <MailIcon/>
-          <p>CONTACT MAIL </p>
-          <p>info.atrik @gmail.com</p>
+          <p>CONTACT MAIL: info@gmail.com</p>
         </div>
         <div className={css.icon}>
           <LocationIcon/>
-          <p>CONTACT LOCATION </p>
-          <p>18/2, Topkhana Road,Australia.</p>
+          <p>LOCATION ADDRESS: Topa Road,Australia.</p>
         </div>
       </div>
     </div>

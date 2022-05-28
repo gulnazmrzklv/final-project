@@ -19,7 +19,6 @@ function Banner () {
           <button>DISCOVER MORE</button>
           </Link>
         </div>
-
       </div>
     </div>
   )
