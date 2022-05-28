@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { StoreContext } from './store/context';
 import  Header from './components/Header'
-import Banner from './components/Banner';
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
 import OurServicesPage from './pages/OurServicesPage';
@@ -14,7 +13,7 @@ import FaqPage from './pages/FaqPage';
 import CheckoutPage from './pages/CheckoutPage';
 import CartPage from './pages/CartPage';
 import Sponsors from './components/Sponsors';
-
+import Footer from './components/Footer';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -34,7 +33,7 @@ function App() {
   }, []);
 
   const addToCart = (newProduct) => {
-    let product = cart.find((el) => el.id ===newProduct.id);
+    let product = cart.find((el) => el.id === newProduct.id);
 
     if(product) {
       product.qty++
@@ -72,7 +71,6 @@ function App() {
     <div className="App">
       <StoreContext.Provider value={storeState}>
         <Header />
-        <Banner />
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/aboutus' element={<AboutUsPage />} />
@@ -85,6 +83,7 @@ function App() {
           <Route path='/faq' element={<FaqPage/>} />
         </Routes>
         <Sponsors />
+        <Footer />
       </StoreContext.Provider>
     </div>
   );
