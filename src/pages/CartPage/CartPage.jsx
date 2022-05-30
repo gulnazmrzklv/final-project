@@ -26,12 +26,12 @@ const CartPage = () => {
                   <p>{products.title}</p>
                 </div>
                 <p>{products.price.toFixed(2)}</p>
-                <input
+                <input className={css.qty}
                   type="number"
                   defaultValue={+products.qty}
                   onChange={(e)=> changeProductQty(products.id, +e.target.value)}
                 />
-                <p>{(products.price * products.qty)}</p>
+                <p>{(products.price * products.qty).toFixed(2)}</p>
                 <button>x</button>
               </div>
               )

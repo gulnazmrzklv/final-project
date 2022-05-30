@@ -52,10 +52,6 @@ function App() {
     }
   }
 
-  const deleteFromCart = (id) => {
-    setCart(cart.filter((product)=> product.id !== id))
-  }
-
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart])
